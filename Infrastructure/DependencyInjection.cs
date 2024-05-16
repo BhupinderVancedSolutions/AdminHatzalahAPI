@@ -20,6 +20,7 @@ namespace Infrastructure
             
             services.AddTransient<ISendGridEmail, SendGridEmail>();
             services.AddTransient<IUserService, UserService>();
+            services.AddTransient<IImportantNumberService, ImportantNumberService>();
 
             #endregion
 
@@ -27,6 +28,7 @@ namespace Infrastructure
 
             services.AddTransient<IRequestBuilder, RequestBuilder>();
             services.AddTransient<IUserRepository, UserRepository>();
+            services.AddTransient<IImportantNumberRepository, ImportantNumberRepository>();
 
             #endregion
         }

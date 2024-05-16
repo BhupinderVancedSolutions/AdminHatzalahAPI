@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <Folder Include="Common\Helpers\TwilioUtility\" />
+    <Folder Include="Handler\ImportantNumber\Command\" />
     <Folder Include="Handler\User\Command\" />
   </ItemGroup>
 
