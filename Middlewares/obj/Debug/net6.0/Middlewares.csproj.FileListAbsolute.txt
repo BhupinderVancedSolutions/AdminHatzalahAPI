@@ -1,0 +1,12 @@
+D:\HatzalahAdminPortalApi1\HatzalahAdminPortalApi\Middlewares\bin\Debug\net6.0\Middlewares.deps.json
+D:\HatzalahAdminPortalApi1\HatzalahAdminPortalApi\Middlewares\bin\Debug\net6.0\Middlewares.dll
+D:\HatzalahAdminPortalApi1\HatzalahAdminPortalApi\Middlewares\bin\Debug\net6.0\Middlewares.pdb
+D:\HatzalahAdminPortalApi1\HatzalahAdminPortalApi\Middlewares\obj\Debug\net6.0\Middlewares.csproj.AssemblyReference.cache
+D:\HatzalahAdminPortalApi1\HatzalahAdminPortalApi\Middlewares\obj\Debug\net6.0\Middlewares.GeneratedMSBuildEditorConfig.editorconfig
+D:\HatzalahAdminPortalApi1\HatzalahAdminPortalApi\Middlewares\obj\Debug\net6.0\Middlewares.AssemblyInfoInputs.cache
+D:\HatzalahAdminPortalApi1\HatzalahAdminPortalApi\Middlewares\obj\Debug\net6.0\Middlewares.AssemblyInfo.cs
+D:\HatzalahAdminPortalApi1\HatzalahAdminPortalApi\Middlewares\obj\Debug\net6.0\Middlewares.csproj.CoreCompileInputs.cache
+D:\HatzalahAdminPortalApi1\HatzalahAdminPortalApi\Middlewares\obj\Debug\net6.0\Middlewares.dll
+D:\HatzalahAdminPortalApi1\HatzalahAdminPortalApi\Middlewares\obj\Debug\net6.0\refint\Middlewares.dll
+D:\HatzalahAdminPortalApi1\HatzalahAdminPortalApi\Middlewares\obj\Debug\net6.0\Middlewares.pdb
+D:\HatzalahAdminPortalApi1\HatzalahAdminPortalApi\Middlewares\obj\Debug\net6.0\ref\Middlewares.dll
