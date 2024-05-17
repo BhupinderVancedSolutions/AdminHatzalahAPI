@@ -25,14 +25,14 @@ ApiMapConfiguration.Configure(configuration);
 ApiMapsterMappings.Configure();
 ApplicationMapsterMappings.Configure();
 //Add Cors
-//builder.Services.AddCors(options =>
-//{
-//options.AddPolicy(name: myCors,
-//                  policy =>
-//{
-//policy.WithOrigins("https://rhreportsbeta.hatzoloh.live/", "http://rhreportsbeta.hatzoloh.live/", "https://localhost:4200", "https://cjreports.hatzalah.live/", "http://cjreports.hatzalah.live/", "https://kjreports.hatzalah.live/", "http://kjreports.hatzalah.live/", "*").AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin();
-//});
-//});
+builder.Services.AddCors(options =>
+{
+options.AddPolicy(name: myCors,
+                  policy =>
+{
+policy.WithOrigins("https://rhreportsbeta.hatzoloh.live/", "http://rhreportsbeta.hatzoloh.live/", "https://localhost:4200", "https://cjreports.hatzalah.live/", "http://cjreports.hatzalah.live/", "https://kjreports.hatzalah.live/", "http://kjreports.hatzalah.live/", "*").AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin();
+});
+});
 
 builder.Services.AddSwaggerGen(c =>
 {
