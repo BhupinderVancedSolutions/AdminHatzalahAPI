@@ -2,6 +2,7 @@
 using Application.Abstraction.Repositories;
 using Application.Common.Dtos;
 using Dapper;
+using DTO.Request.ImportantNumber;
 using DTO.Response.ImportantNumber;
 using System.Data;
 
@@ -15,6 +16,21 @@ namespace Infrastructure.Implementation.Repositories
         {
             _dbContext = dbContext;
             _parameterManager = parameterManager;
+        }
+
+        public async Task<int> CreateUpdateImportantNumber(CreateUpdateImportantNumberRequestDto createUpdateImportantNumberRequestDto)
+        {
+            return await _dbContext.ExecuteStoredProcedure<int>("usp_CreateUpdateImportantNumber",
+           _parameterManager.Get("@Id", createUpdateImportantNumberRequestDto.Id),
+           _parameterManager.Get("@Name", createUpdateImportantNumberRequestDto.Name),
+           _parameterManager.Get("@PhoneNumber", createUpdateImportantNumberRequestDto.PhoneNumber),
+           _parameterManager.Get("@CategoryName", createUpdateImportantNumberRequestDto.CategoryName));
+        }
+
+        public async Task<bool> DeleteImportantNumber(DeleteImportantNumberRequestDto deleteImportantNumberRequestDto)
+        {
+            return await _dbContext.ExecuteStoredProcedure<bool>("usp_DeleteImportantNumber",
+            _parameterManager.Get("@Id", deleteImportantNumberRequestDto.Id));
         }
 
         public async Task<(List<GetAllImportantNumberResponseDto>, int)> GetAllImportantNumbers(string filterModel, ServerRowsRequest commonRequest, string getSort)
@@ -37,6 +53,13 @@ namespace Infrastructure.Implementation.Repositories
                 dbConnection.Close();
             }
             return (numbers, total);
+        }
+
+        public async Task<bool> IsExistImportantNumber(string Name, int id = 0)
+        {
+            return await _dbContext.ExecuteStoredProcedure<bool>("usp_IsExistImportantNumber",
+                _parameterManager.Get("@Id", id),
+                _parameterManager.Get("@Name", Name));
         }
     }
 }

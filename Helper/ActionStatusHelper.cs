@@ -7,5 +7,6 @@ namespace Helper
         public const string Deleted = "Deleted";
         public const string Error = "Something went wrong.";
         public const string Success = "Success";
+        public const string IsExistName = "Name already exist";
     }
 }
